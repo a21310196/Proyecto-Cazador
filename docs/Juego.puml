@@ -1,0 +1,62 @@
+@startuml Presa VS Cazador
+
+class Juego
+{
+    -void ProcesarEventos();
+    -void Actualizar(deltaTiempo);
+    -void Dibujar();
+    -void AparecerCazador();
+
+    -ventana
+    -cazador
+    -jugador
+    -reloj
+    -fuente
+    -textoTiempo
+    -textoPuntos
+    -textoReiniciar
+    -textoUltimaPuntuacion
+    -textoAparicionUltimoCazador
+    -int puntuacion
+    -int ultimaPuntuacion
+    -bool gameOver
+
+    +void Iniciar()
+    +void ReinciarJuego()
+}
+
+class Cazador
+{
+    -circulo
+    -float velocidad
+
+    +Cazador(float velocidad)
+    +void Actualizar(posicionPresa,deltaTiempo)
+    +void Dibujar(ventana)
+    +ObtenerBordes()
+}
+
+class Jugador
+{
+    -circulo
+
+    +Jugador()
+    +void Entrada()
+    +void Dibujar(ventana)
+    +ObtenerBordes()
+    +ObtenerPosicion()
+}
+
+class Sonido
+{
+    -_musicaFondo()
+    -_sonido
+
+    +void CargarMusicaFondo()
+}
+
+Jugador "1" o-- "1" Juego
+
+Juego "1" *-- "*" Cazador
+
+Juego "1" <-- "1" Sonido 
