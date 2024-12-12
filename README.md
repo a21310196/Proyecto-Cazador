@@ -90,3 +90,20 @@ instalados las depedencias anteriores puede usar estos comandos en la termninal 
 
 ---
 
+## Mods Implementados en la ultima revision
+
+Se crearon difrentes estados del juego mediante el uso de condicionantes de tipo boleana con el fin de dar los siguientes estados
+---
+###Victoria
+Se agrego una fase en donde se tiene un objetivo clave el cual es recabar los sufientes puntos sin ser atrapado con el fin de ganar el juego, siendo este seateado a 500 unicamente con la finalidad de demostrar su funcionamiento, se le agrego musica particular y mensajes personalizados para el estado victoria.
+![Imagenvictoria](victoriaportada.png)
+###GameOver
+Se agrego una fase game over que esta optimizada con sonido y imagen propia, con el fin de demostar el gameover de forma efectiva, se usaron archivos de audio y tipo Png, asi como mensajes para dar a entender el game over.
+![ImagenGameOver](GameOverpantalla.png)
+
+###Reincio y inico del Juego
+Ya existia este apartado, solo se le agragaron elementos que lo hacen mas diferenciable de su version anterior.
+![Imageninicio](Iniciopantalla.png)
+
+##Implementacion de los metodos:
+En esta Version el codigo se optimizo generando las instancias como variables globales para que fueran accesibles por los elementos del codigo, ya que son pocos estados no resulta incomodo y no es tan necesario encapsularlos tanto.
