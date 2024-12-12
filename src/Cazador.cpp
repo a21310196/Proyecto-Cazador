@@ -27,4 +27,3 @@ void Cazador::Dibujar(sf::RenderWindow& ventana) const {
 sf::FloatRect Cazador::ObtenerBordes() const {
     return sprite.getGlobalBounds();
 }
-

@@ -16,6 +16,11 @@ $(BIN_DIR)/%.exe: $(SRC_DIR)/%.cpp
 
 # Regla por defecto para compilar todos los archivos .cpp
 all: $(EXE_FILES)
+Cazador: $(EXE_FILES)
+Juego: $(EXE_FILES)
+Sonido: $(EXE_FILES)
+Aleatorio:$(EXE_FILES)
+Jugador: $(EXE_FILES)
 
 # Regla para ejecutar cada archivo .exe
 run%: $(BIN_DIR)/%.exe
